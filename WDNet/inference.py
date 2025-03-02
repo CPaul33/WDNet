@@ -53,12 +53,10 @@ def test():
     with torch.no_grad():
         for idx_iter, (img, size, img_dir) in enumerate(tbar):
             img = Variable(img).cuda()
-            # 初始化计时器和帧计数
+          
             torch.cuda.synchronize()
             prev_time = time.time()
-
             pred = net.forward(img)
-
             torch.cuda.synchronize()
             curr_time = time.time()
             elapsed_time = curr_time - prev_time
