@@ -45,7 +45,7 @@ class ChannelGate(nn.Module):
         channel_att_sum = None
         for pool_type in self.pool_types:
             if pool_type == 'avg':
-                avg_pool = F.avg_pool2d(x, (x.size(2), x.size(3)), stride=(x.size(2), x.size(3)))  # 和nn.AdaptiveAvgPool2d(1) 效果一样，实现了全局平均池化，它把任意大小的特征图通过平均池化缩小为 1x1
+                avg_pool = F.avg_pool2d(x, (x.size(2), x.size(3)), stride=(x.size(2), x.size(3)))
                 channel_att_raw = self.mlp(avg_pool)
             elif pool_type == 'max':
                 max_pool = F.max_pool2d(x, (x.size(2), x.size(3)), stride=(x.size(2), x.size(3)))
