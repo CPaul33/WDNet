@@ -14,8 +14,8 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
 parser = argparse.ArgumentParser(description="PyTorch BasicIRSTD train")
-parser.add_argument("--model_names", default=['SPIE'], nargs='+',
-                    help="model_name: 'SPIE' ")
+parser.add_argument("--model_names", default=['WDNet'], nargs='+',
+                    help="model_name: 'WDNet' ")
 parser.add_argument("--dataset_names", default=['SIRST'], nargs='+',
                     help="dataset_name: 'SIRST', 'NUDT-SIRST', 'IRSTD-1K', 'SIRST3', 'NUDT-SIRST-Sea', 'IRDST_real'")
 parser.add_argument("--img_norm_cfg", default=None, type=dict,
