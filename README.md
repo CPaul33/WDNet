@@ -82,4 +82,4 @@ The original links of these datasets:
 ![image](https://github.com/CPaul33/WDNet/blob/main/performance_lightweight.jpg)
 
 ## Acknowledgement
-*This code and repository layout is highly borrowed from [IRSTD-Toolbox](https://github.com/XinyiYing/BasicIRSTD). Thanks to Xinyi Ying.
+* This code and repository layout is highly borrowed from [IRSTD-Toolbox](https://github.com/XinyiYing/BasicIRSTD). Thanks to Xinyi Ying.
