@@ -25,7 +25,7 @@ parser.add_argument("--img_norm_cfg_mean", default=None, type=float,
 parser.add_argument("--img_norm_cfg_std", default=None, type=float,
                     help="specific a std value img_norm_cfg, default=None (using img_norm_cfg values of each dataset)")
 
-parser.add_argument("--dataset_dir", default='/root/WDNet/datasets', type=str, help="train_dataset_dir")
+parser.add_argument("--dataset_dir", default='/root/datasets', type=str, help="train_dataset_dir")
 parser.add_argument("--batchSize", type=int, default=8, help="Training batch sizse")
 parser.add_argument("--patchSize", type=int, default=256, help="Training patch size")
 parser.add_argument("--save", default='./log', type=str, help="Save path of checkpoints")
