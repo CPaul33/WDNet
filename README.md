@@ -25,8 +25,8 @@ Please first download the datasets via [Google Drive](https://drive.google.com/f
   │    │    │    ├── XDU1.png
   │    │    │    ├── ...
   │    │    ├── img_idx
-  │    │    │    ├── train_SIRST-v1.txt
-  │    │    │    ├── test_SIRST-v1.txt
+  │    │    │    ├── train_SIRST.txt
+  │    │    │    ├── test_SIRST.txt
   │    ├── NUDT-SIRST
   │    │    ├── images
   │    │    │    ├── 000001.png
