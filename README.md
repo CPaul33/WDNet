@@ -77,5 +77,6 @@ The original links of these datasets:
 
 ## Performance comparison
 * Comparison to SOTA methods:
-
+![image](https://github.com/CPaul33/WDNet/blob/main/performance_SOTA.jpg)
 * Comparison to lightweight methods:
+![image](https://github.com/CPaul33/WDNet/blob/main/performance_lightweight.jpg)
