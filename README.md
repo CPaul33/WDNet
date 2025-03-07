@@ -50,15 +50,15 @@ The original links of these datasets:
 
 ## Commands
 ### Commands for converting to operation pathing
-```
-$ cd /root/WDNet
-```
-where '/root/' denotes your current path.
+  ```
+  $ cd /root/WDNet
+  ```
+  where '/root/' denotes your current path.
 ### Commands for training
 * **Run **`train.py`** to perform network training in single GPU and multiple GPUs. Example for training [model_name] on [dataset_name] datasets:**
-```
-  $ python train.py --model_names WDNet --dataset_names SIRST
-```
+  ```
+    $ python train.py --model_names WDNet --dataset_names SIRST
+  ```
 ### Commands for test
 * **Run **`test.py`** to perform network inference and evaluation. Example for test [model_name] on [dataset_name] datasets:**
   ```
