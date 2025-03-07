@@ -25,13 +25,13 @@ parser.add_argument("--img_norm_cfg_mean", default=None, type=float,
 parser.add_argument("--img_norm_cfg_std", default=None, type=float,
                     help="specific a std value img_norm_cfg, default=None (using img_norm_cfg values of each dataset)")
 
-parser.add_argument("--dataset_dir", default='/root/papers_demo/aBasicIRSTD-main/datasets', type=str, help="train_dataset_dir")
+parser.add_argument("--dataset_dir", default='/root/WDNet/datasets', type=str, help="train_dataset_dir")
 parser.add_argument("--batchSize", type=int, default=8, help="Training batch sizse")
 parser.add_argument("--patchSize", type=int, default=256, help="Training patch size")
 parser.add_argument("--save", default='./log', type=str, help="Save path of checkpoints")
 parser.add_argument("--resume", default=None, nargs='+', help="Resume from exisiting checkpoints (default: None)")
 parser.add_argument("--pretrained", default=None, nargs='+', help="Load pretrained checkpoints (default: None)")
-parser.add_argument("--nEpochs", type=int, default=1500, help="Number of epochs")
+parser.add_argument("--nEpochs", type=int, default=500, help="Number of epochs")
 parser.add_argument("--optimizer_name", default='Adam', type=str, help="optimizer name: Adam, Adagrad, SGD")
 parser.add_argument("--optimizer_settings", default={'lr': 5e-4}, type=dict, help="optimizer settings")
 parser.add_argument("--scheduler_name", default='MultiStepLR', type=str, help="scheduler name: MultiStepLR")
@@ -90,14 +90,14 @@ def train():
     if opt.optimizer_name == 'Adam':
         opt.optimizer_settings = {'lr': 5e-4}
         opt.scheduler_name = 'MultiStepLR'
-        # opt.scheduler_settings = {'epochs': 1500, 'step': [400, 700,1000], 'gamma': 0.1}
-        opt.scheduler_settings = {'epochs': 1000, 'step': [200, 300,800], 'gamma': 0.1}
+        # opt.scheduler_settings = {'epochs': 500, 'step': [400, 700,1000], 'gamma': 0.1}
+        opt.scheduler_settings = {'epochs': 500, 'step': [200, 300], 'gamma': 0.1}
         opt.scheduler_settings['epochs'] = opt.nEpochs
 
     if opt.optimizer_name == 'Adagrad':
         opt.optimizer_settings = {'lr': 0.05}
         opt.scheduler_name = 'CosineAnnealingLR'
-        opt.scheduler_settings = {'epochs': 1500, 'min_lr': 1e-4}
+        opt.scheduler_settings = {'epochs': 500, 'min_lr': 1e-4}
         opt.scheduler_settings['epochs'] = opt.nEpochs
         print('Adagrad123')
 
