@@ -11,7 +11,7 @@ Recent advancements in infrared small target detection (IRSTD) have predominantl
 
 ## Datasets
 We used the SIRST, NUDT-SIRST, IRSTD-1K for both training and test. 
-Please first download our datasets via [Baidu Drive](https://pan.baidu.com/s/1df4LagRRjyNeZSfoIqOuHg?pwd=1113) (key:1113) or [Google Drive](https://drive.google.com/file/d/1LscYoPnqtE32qxv5v_dB4iOF4dW3bxL2/view?usp=sharing), and place the 3 datasets to the folder `./datasets/`.
+Please first download the datasets via [Google Drive](https://drive.google.com/file/d/1LscYoPnqtE32qxv5v_dB4iOF4dW3bxL2/view?usp=sharing), and place the 3 datasets to the folder `./datasets/`.
 * **Our project has the following structure:**
   ```
   ├──./datasets/
